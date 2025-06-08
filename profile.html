@@ -1,0 +1,41 @@
+<!-- 使用者運動紀錄頁面 -->
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <title>我的運動紀錄</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="js/profile.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>SportNow - 運動紀錄</h1>
+    <a href="index.html">← 返回首頁</a>
+  </header>
+  <main>
+    <form id="record-form">
+      <label>日期：
+    <input type="date" id="date" required />
+  </label>
+  <label>運動類型：
+    <select id="type" required>
+      <option value="跑步">跑步</option>
+      <option value="游泳">游泳</option>
+      <option value="重訓">重訓</option>
+      <option value="瑜伽">瑜伽</option>
+      <option value="有氧">有氧</option>
+    </select>
+  </label>
+  <label>運動時間（分鐘）：
+    <input type="number" id="duration" min="1" required />
+  </label>
+  <label>備註：
+    <input type="text" id="note" />
+  </label>
+  <button type="submit">新增紀錄</button>
+</form>
+
+<ul id="record-list"></ul>
+  </main>
+</body>
+</html>
