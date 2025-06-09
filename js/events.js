@@ -1,5 +1,5 @@
 // events.html 的控制邏輯
-fetch("../data/events.json")
+fetch("data/events.json")
   .then(res => res.json())
   .then(data => {
     const list = document.getElementById("event-list");
