@@ -1,7 +1,7 @@
-fetch("data/news.json")
-  .then(res => res.json())
+fetch("data/news.json")                           ✅ 相對路徑正確（GitHub Pages 適用）
+  .then(res => res.json())                        ✅ 對 response 做 JSON 解析
   .then(data => {
-    const list = document.getElementById("news-list");
+    const list = document.getElementById("news-list");    ✅ 取得容器 ul
     data.forEach(article => {
       const item = document.createElement("li");
       item.innerHTML = `
